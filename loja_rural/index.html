@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barrocas Rural</title>
 
-    <link rel="stylesheet" href="/loja_rural/css/grande/styleGrande.css">
+    <link rel="stylesheet" href="css/pequena.css" media="(min-width: 400px)">
+    <link rel="stylesheet" href="css/media.css" media="(min-width: 780px)">
+    <link rel="stylesheet" href="css/grande.css" media="(min-width: 1366px)">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- CONTEUDO -->
 </head>
 <body>
 
-   <!-- CONTEUDO -->
-
-   
     <!-- Criação do Site Barrocas Rural, Teofilandia Rural e Araci Rural -->
 
     <!-- Inicio do HEADER, nesse HEADER vai ter: um logo tipo um search para busca e link para cadastro ou entrar e logo abaixo terá uma NAV com os demais links para cada animal -->
@@ -23,13 +24,13 @@
     <!-- Inicio do HEADER. -->
      <header id="header" class="headerContainer">
         <!-- Logotipo -->
-        <a href="#" class="logo"><img src="/loja_rural/imagens/araci_rural.jpeg" alt="Logo Tipo" width="170px" height="120px" class="logotipo"></a>
+        <a href="#" class="logo"><img src="/loja_rural/imagens/00. araci_rural.jpeg" alt="Logo Tipo" width="120px" height="70px" class="logotipo"></a>
         <!-- FIM do logotipo -->
         
         <!-- Barra de Pesquisa -->
          <form action="#" id="form-serach" method="get">
             <input type="search" id="search-bar" name="query" placeholder="Busque por produtos rurais e medicamentos...">
-            <button type="submit"><img src="/loja_rural/icomoon/PNG/search.png" alt="pesquisar"></button>
+            <button type="submit" id="btnSearch"><img src="/loja_rural/icomoon/PNG/search.png" alt="pesquisar"></button>
          </form>
         <!-- FIM Barra de Pesquisa -->
 
@@ -44,7 +45,7 @@
 
     <!-- Inicio do NAV -->
      <nav class="containerNav">
-        <ul class="contentMain">
+        <ul class="contentNav">
             <li class="tipoAnimais"><a href="#" class="aves animais">Aves</a></li> <!-- AVES -->
             <li class="tipoAnimais"><a href="#" class="bovinos animais">Bovinos</a></li> <!-- BOVINOS -->
             <li class="tipoAnimais"><a href="#" class="caprinos animais">Caprinos</a></li> <!-- CAPRINOS -->
@@ -59,19 +60,416 @@
     <!-- Inicio do MAIN -->
      <main class="containerMain">
         <!-- CARROSSEL DE IMAGENS COM AS IMAGENS: BARROCAS RURAL, ARACI RUAL E TEOFILANDOA RURAL -->
-
+         <img src="/loja_rural/imagens/00. araci_rural.jpeg" alt="loja rual" class="carrossel">
         <!-- FIM DO CARROSSEL -->
 
         <!-- Aqui vai ficar armazenado os cards que irão mostrar algumas informações dos produtos -->
+        <h3 class="titleCards">Medicamentos Veterinarios</h3>
          <section class="containerCards">
-            <h3 class="titleCards">Medicamentos Veterinarios</h3>
-
-            <article class="card1 cards">
-                
-            </article>
             
+
+            <div class="containerMainCards">
+
+            <!-- primeiro card -->
+            <article class="card1 cards">
+               <a href="#" class="link1 links">
+                  <div class="image-container">
+                     <img src="/loja_rural/imagens/01. MATABICHEIRA FORTE.jpg" alt="MATABICHEIRA">
+                 </div>
+                  <h3>Mata Bicheira forte SV - Zoetis | Larvicida, bernicida e antimicroniano</h3>
+               </a>
+               <p><strong>R$ 14,00</strong></p>
+               <h4><span class="pix">R$ 14,60 no pix</span></h4>
+               <p><strong>ou 1x de R$ 14,00 no cartão</strong></p>
+
+               <!-- Área que será mostrada no hover -->
+               <div class="hover-content">
+                  <div class="quantity-selector">
+                     <button class="quantity-btn">-</button>
+                     <input type="text" value="1" class="quantity-input">
+                     <button class="quantity-btn">+</button>
+                  </div>
+                  <button class="add-to-cart">Adicionar</button>
+               </div>
+            </article>
+            <!-- FIM primeiro card -->
+
+            <!-- segundo card -->
+            <article class="card2 cards">
+               <a href="#" class="link2 links">
+                  <div class="image-container">
+                     <img src="/loja_rural/imagens/02. OCITOCINA FORTE 100ML.jpg" alt="OCITOCINA FORTE 100ML">
+                 </div>
+                  <h3>Ocitocina Forte 100ml | Eliminação do leite residual e prevenção de mastite</h3>
+               </a>
+               <p><strong>R$ 9,49</strong></p>
+               <h4><span class="pix">R$ 8,54 no pix</span></h4>
+               <p><strong>ou 1x de R$ 9,49 no cartão</strong></p>
+
+               <!-- Área que será mostrada no hover -->
+               <div class="hover-content">
+                  <div class="quantity-selector">
+                     <button class="quantity-btn">-</button>
+                     <input type="text" value="1" class="quantity-input">
+                     <button class="quantity-btn">+</button>
+                  </div>
+                  <button class="add-to-cart">Adicionar</button>
+               </div>
+            </article>
+            <!-- FIM segundo card -->
+
+            <!-- terceiro card -->
+            <article class="card3 cards">
+               <a href="#" class="link3 links">
+                  <div class="image-container">
+                     <img src="/loja_rural/imagens/03. OCITOPEC 100ML.jpg" alt="OCITOPEC">
+                 </div>
+                  <h3>OcitoPec 100ml | Vaxxinova | Ocitocina - Auxílio ao leite, placenta e parto</h3>
+               </a>
+               <p><strong>R$ 8,35</strong></p>
+               <h4><span class="pix">R$ 7,52 no pix</span></h4>
+               <p><strong>ou 1x de R$ 8,35 no cartão</strong></p>
+
+               <!-- Área que será mostrada no hover -->
+               <div class="hover-content">
+                  <div class="quantity-selector">
+                     <button class="quantity-btn">-</button>
+                     <input type="text" value="1" class="quantity-input">
+                     <button class="quantity-btn">+</button>
+                  </div>
+                  <button class="add-to-cart">Adicionar</button>
+               </div>
+            </article>
+            <!-- FIM terceiro card -->
+
+            <!-- quarto card -->
+            <article class="card4 cards">
+               <a href="#" class="link4 links">
+                  <div class="image-container">
+                     <img src="/loja_rural/imagens/04. PLACENCAL OCITOCINA.jpg" alt="PLACENCAL">
+                 </div>
+                  <h3>Placencal Ocitocina - Calbos | Abreviar o prazo de expulsão do feto</h3>
+               </a>
+               <p><strong>R$ 8,89</strong></p>
+               <h4><span class="pix">R$ 8,00 no pix</span></h4>
+               <p><strong>ou 1x de R$ 8,89 no cartão</strong></p>
+
+               <!-- Área que será mostrada no hover -->
+               <div class="hover-content">
+                  <div class="quantity-selector">
+                     <button class="quantity-btn">-</button>
+                     <input type="text" value="1" class="quantity-input">
+                     <button class="quantity-btn">+</button>
+                  </div>
+                  <button class="add-to-cart">Adicionar</button>
+               </div>
+            </article>
+            <!-- FIM quarto card -->
+
+            <!-- quinto card -->
+            <article class="card5 cards">
+               <a href="#" class="link5 links">
+                  <div class="image-container">
+                     <img src="/loja_rural/imagens/05. TERRAMICINA LA 50ML.jpg" alt="TERRAMICINA LA 50ML">
+                 </div>">
+                  <h3>Terramicina°LA 50ml - Zoetis | Tratamento de infecções bacterianas</h3>
+               </a>
+               <p><strong>R$ 25,71</strong></p>
+               <h4><span class="pix">R$ 23,14 no pix</span></h4>
+               <p><strong>ou 1x de R$ 25,71 no cartão</strong></p>
+
+               <!-- Área que será mostrada no hover -->
+               <div class="hover-content">
+                  <div class="quantity-selector">
+                     <button class="quantity-btn">-</button>
+                     <input type="text" value="1" class="quantity-input">
+                     <button class="quantity-btn">+</button>
+                  </div>
+                  <button class="add-to-cart">Adicionar</button>
+               </div>
+            </article>
+            <!-- FIM quinto card -->
+
+            <!-- sexto card -->
+            <article class="card6 cards">
+               <a href="#" class="link6 links">
+                  <div class="image-container">
+                     <img src="/loja_rural/imagens/06. MASTIZONE V.S 10ML - UCB.jpg" alt="MASTIZONE">
+                 </div>
+                  <h3>Mastizone V.S. 10ml - UCB | Tratamento e prevenção de mastites no período seco</h3>
+               </a>
+               <p><strong>R$ 8,38</strong></p>
+               <h4><span class="pix">R$ 7,54 no pix</span></h4>
+               <p><strong>ou 1x de R$ 8,38 no cartão</strong></p>
+
+               <!-- Área que será mostrada no hover -->
+               <div class="hover-content">
+                  <div class="quantity-selector">
+                     <button class="quantity-btn">-</button>
+                     <input type="text" value="1" class="quantity-input">
+                     <button class="quantity-btn">+</button>
+                  </div>
+                  <button class="add-to-cart">Adicionar</button>
+               </div>
+            </article>
+            <!-- FIM sexto card -->
+
+            <!-- setimo card -->
+            <article class="card7 cards">
+               <a href="#" class="link7 links">
+                  <div class="image-container">
+                     <img src="/loja_rural/imagens/07. DECTOMAX 50ML.jpg" alt="DECTOMAX">
+                 </div>
+                  <h3>Dectomax - Zoetis | Contole de parasitas internos e externos</h3>
+               </a>
+               <p><strong>R$ 35,94</strong></p>
+               <h4><span class="pix">R$ 32,35 no pix</span></h4>
+               <p><strong>ou 1x de R$ 35,94 no cartão</strong></p>
+
+               <!-- Área que será mostrada no hover -->
+               <div class="hover-content">
+                  <div class="quantity-selector">
+                     <button class="quantity-btn">-</button>
+                     <input type="text" value="1" class="quantity-input">
+                     <button class="quantity-btn">+</button>
+                  </div>
+                  <button class="add-to-cart">Adicionar</button>
+               </div>
+            </article>
+            <!-- FIM setimo card -->
+
+            <!-- oivato card -->
+            <article class="card8 cards">
+               <a href="#" class="link8 links">
+                  <div class="image-container">
+                     <img src="/loja_rural/imagens/08. FERRON B12 50ML.jpg" alt="FERRON">
+                 </div>
+                  <h3>Ferron°B12 - 50 ml - Calbos | Tratamento de anemias</h3>
+               </a>
+               <p><strong>R$ 12,26</strong></p>
+               <h4><span class="pix">R$ 11,03 no pix</span></h4>
+               <p><strong>ou 1x de R$ 12,26 no cartão</strong></p>
+
+               <!-- Área que será mostrada no hover -->
+               <div class="hover-content">
+                  <div class="quantity-selector">
+                     <button class="quantity-btn">-</button>
+                     <input type="text" value="1" class="quantity-input">
+                     <button class="quantity-btn">+</button>
+                  </div>
+                  <button class="add-to-cart">Adicionar</button>
+               </div>
+            </article>
+            <!-- FIM oivato card -->
+
+            <!-- nono card -->
+            <article class="card9 cards">
+               <a href="#" class="link9 links">
+                  <div class="image-container">
+                     <img src="/loja_rural/imagens/09. PROVERME 28G.jpg" alt="PROVERME">
+                 </div>
+                  <h3>Proverme 28 g - JA | Vermífungo solúvel para animais</h3>
+               </a>
+               <p><strong>R$ 14,00</strong></p>
+               <h4><span class="pix">R$ 12,60 no pix</span></h4>
+               <p><strong>ou 1x de R$ 14,00 no cartão</strong></p>
+
+               <!-- Área que será mostrada no hover -->
+               <div class="hover-content">
+                  <div class="quantity-selector">
+                     <button class="quantity-btn">-</button>
+                     <input type="text" value="1" class="quantity-input">
+                     <button class="quantity-btn">+</button>
+                  </div>
+                  <button class="add-to-cart">Adicionar</button>
+               </div>
+            </article>
+            <!-- FIM nono card -->
+
+            <!-- decimo card -->
+            <article class="card10 cards">
+               <a href="#" class="link10 links">
+                  <div class="image-container">
+                     <img src="/loja_rural/imagens/10. FERRON B12 200ML.jpg" alt="FERRON B12">
+                 </div>
+                  <h3>Vit ADE 200 ml - Calbos | Vitamina para bovinos, equinos e ovinos</h3>
+               </a>
+               <p><strong>R$ 46,78</strong></p>
+               <h4><span class="pix">R$ 42,10 no pix</span></h4>
+               <p><strong>ou 1x de R$ 46,78 no cartão</strong></p>
+
+               <!-- Área que será mostrada no hover -->
+               <div class="hover-content">
+                  <div class="quantity-selector">
+                     <button class="quantity-btn">-</button>
+                     <input type="text" value="1" class="quantity-input">
+                     <button class="quantity-btn">+</button>
+                  </div>
+                  <button class="add-to-cart">Adicionar</button>
+               </div>
+            </article>
+            <!-- FIM decimo card -->
+
+            <!-- decimo primeiro card -->
+            <article class="card11 cards">
+               <a href="#" class="link11 links">
+                  <div class="image-container">
+                     <img src="/loja_rural/imagens/11. HIPOFEN PASTA ORAL 20G.jpg" alt="HIPOFEN PASTA ORAL">
+                 </div>
+                  <h3>Hipofen Pasta 20g - Calbos | Vermífugo para equinos</h3>
+               </a>
+               <p><strong>R$ 10,97</strong></p>
+               <h4><span class="pix">R$ 9,87 no pix</span></h4>
+               <p><strong>ou 1x de R$ 10,97 no cartão</strong></p>
+
+               <!-- Área que será mostrada no hover -->
+               <div class="hover-content">
+                  <div class="quantity-selector">
+                     <button class="quantity-btn">-</button>
+                     <input type="text" value="1" class="quantity-input">
+                     <button class="quantity-btn">+</button>
+                  </div>
+                  <button class="add-to-cart">Adicionar</button>
+               </div>
+            </article>
+            <!-- FIM decimo primeiro card -->
+
+            <!-- decimo segundo card -->
+            <article class="card12 cards">
+               <a href="#" class="link12 links">
+                  <div class="image-container">
+                     <img src="/loja_rural/imagens/12. MATABICHEIRA PRATA.jpg" alt="MATABICHEIRA">
+                 </div>
+                  <h3>Mata Bicheira Silverbac Prata | LAB</h3>
+               </a>
+               <p><strong>R$ 21,35</strong></p>
+               <h4><span class="pix">R$ 19,22 no pix</span></h4>
+               <p><strong>ou 1x de R$ 21,35 no cartão</strong></p>
+
+               <!-- Área que será mostrada no hover -->
+               <div class="hover-content">
+                  <div class="quantity-selector">
+                     <button class="quantity-btn">-</button>
+                     <input type="text" value="1" class="quantity-input">
+                     <button class="quantity-btn">+</button>
+                  </div>
+                  <button class="add-to-cart">Adicionar</button>
+               </div>
+            </article>
+            <!-- FIM decimo segundo card -->
+
+            <!-- decimo terceiro card -->
+            <article class="card13 cards">
+               <a href="#" class="link13 links">
+                  <div class="image-container">
+                     <img src="/loja_rural/imagens/13. TERRAMICINA LA 20ML.jpg" alt="TERRAMICINA LA">
+                 </div>
+                  <h3>Terramicina°La 20 ml - Zoetis | Tratamento de infecções bacterianas</h3>
+               </a>
+               <p><strong>R$ 15,38</strong></p>
+               <h4><span class="pix">R$ 13,84 no pix</span></h4>
+               <p><strong>ou 1x de R$ 15,38 no cartão</strong></p>
+
+               <!-- Área que será mostrada no hover -->
+               <div class="hover-content">
+                  <div class="quantity-selector">
+                     <button class="quantity-btn">-</button>
+                     <input type="text" value="1" class="quantity-input">
+                     <button class="quantity-btn">+</button>
+                  </div>
+                  <button class="add-to-cart">Adicionar</button>
+               </div>
+            </article>
+            <!-- FIM decimo terceiro card -->
+             
+            <!-- decimo quarto card -->
+            <article class="card14 cards">
+               <a href="#" class="link14 links">
+                  <div class="image-container">
+                     <img src="/loja_rural/imagens/14. BUTOZ 20ML.jpg" alt="BUTOX">
+                 </div>
+                  <h3>Butox°P CE 20ML - MSD | Carrapacida, mosquicida e sarnicida</h3>
+               </a>
+               <p><strong>R$ 4,72</strong></p>
+               <h4><span class="pix">R$ 4,25 no pix</span></h4>
+               <p><strong>ou 1x de R$ 4,72 no cartão</strong></p>
+
+               <!-- Área que será mostrada no hover -->
+               <div class="hover-content">
+                  <div class="quantity-selector">
+                     <button class="quantity-btn">-</button>
+                     <input type="text" value="1" class="quantity-input">
+                     <button class="quantity-btn">+</button>
+                  </div>
+                  <button class="add-to-cart">Adicionar</button>
+               </div>
+            </article>
+            <!-- FIM decimo quarto card -->
+
+            <!-- decimo quinto card -->
+            <article class="card15 cards">
+               <a href="#" class="link15 links">
+                  <div class="image-container">
+                     <img src="/loja_rural/imagens/15. TRISUFLIN.jpg" alt="TRISUFLIN">
+                 </div>
+                  <h3>Trissulfin Pó Sulfametoxazol - Ourofino | infecções intestinais e respiratórias</h3>
+               </a>
+               <p><strong>R$ 9,27</strong></p>
+               <h4><span class="pix">R$ 8,34 no pix</span></h4>
+               <p><strong>ou 1x de R$ 9,27 no cartão</strong></p>
+
+               <!-- Área que será mostrada no hover -->
+               <div class="hover-content">
+                  <div class="quantity-selector">
+                     <button class="quantity-btn">-</button>
+                     <input type="text" value="1" class="quantity-input">
+                     <button class="quantity-btn">+</button>
+                  </div>
+                  <button class="add-to-cart">Adicionar</button>
+               </div>
+            </article>
+            </div>
          </section>
      </main>
-     
+     <!-- FIM do MAIN -->
+
+     <!-- Rodapé -->
+      <footer class="rodape">
+         <!-- Onde vai ficar o conteúdo do Rodapé -->
+         <section class="containerRodape">
+            <!-- Contato -->
+             <article class="contato">
+               <h3 class="titleContato">Contato:</h3>
+               <p><img src="/loja_rural/icomoon/PNG/whatsapp.png" alt="whatsapp">(75) 99272-6456</p>
+               <p><img src="/loja_rural/icomoon/PNG/mail4.png" alt="Email">barrocasrural@gmail.com</p>
+             </article>
+            <!-- FIM Contato -->
+
+            <!-- Redes Sociais -->
+             <article class="redeSociais">
+               <h3 class="titleRedes">Siga Nossas Redes Sociais:</h3>
+               <ul class="sociais">
+                  <li><a href="#" class="instagram"><img src="/loja_rural/icomoon/PNG/instagram.png" alt="Instagram">@barrocas_rural</a></li>
+                  <li><a href="#" class="instagram"><img src="/loja_rural/icomoon/PNG/instagram.png" alt="Instagram">@barrocas_rural</a></li>
+                  <li><a href="#" class="instagram"><img src="/loja_rural/icomoon/PNG/instagram.png" alt="Instagram">@barrocas_rural</a></li>
+               </ul>
+             </article>
+            <!-- FIM Redes Sociais -->
+
+            <!-- Localização -->
+             <article class="localizacao">
+               <h3 class="titleLocalizacao">Localização: </h3>
+               <ul class="loc">
+                  <li>Cidade: Barrocas - BA</li>
+                  <li>Rua da Estação, S/N</li>
+                  <li>Em frente ao infocentro, sede</li>
+               </ul>
+             </article>
+            <!-- FIM Localização -->
+         </section>
+      </footer>
+      <!-- FIM Rodapé -->
+
+      <script src="script.js"></script>
 </body>
 </html>
